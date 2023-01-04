@@ -1,4 +1,13 @@
 .card-container {
   border: 2px solid red;
   flex-grow: 9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
 }

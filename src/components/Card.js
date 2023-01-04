@@ -1,7 +1,15 @@
 import React from "react";
 
 const Card = (props) => {
-  return <div className="card">{props.name}</div>;
+  const handleClick = () => {
+    console.log("clicked", props.name);
+  };
+
+  return (
+    <div className="card" onClick={handleClick}>
+      {props.name}
+    </div>
+  );
 };
 
 export default Card;
