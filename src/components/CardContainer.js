@@ -1,10 +1,11 @@
 import React from "react";
 import "../styles/CardContainer.css";
 
-const CardContainer = () => {
+const CardContainer = (props) => {
   return (
     <div className="card-container">
-      <>Card Container</>
+      {/* delete this */}
+      <button onClick={props.incrementScore}>Increment</button>
     </div>
   );
 };
