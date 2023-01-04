@@ -1,0 +1,4 @@
+.score-board-container {
+  border: 2px solid red;
+  flex-grow: 1;
+}
