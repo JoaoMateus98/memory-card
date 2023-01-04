@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
+import pythonImage from "../images/python.png";
+import javascriptImage from "../images/javascript.png";
+import cImage from "../images/c.png";
 import "../styles/CardContainer.css";
 
 const CardContainer = (props) => {
   const [cardList, setCardList] = useState({
-    array: [{ name: "python" }, { name: "javascript" }, { name: "basic" }],
+    array: [
+      { image: pythonImage, name: "python" },
+      { image: javascriptImage, name: "javascript" },
+      { image: cImage, name: "c++" },
+    ],
   });
 
   // Fisher–Yates shuffle from stack overflow
@@ -38,7 +45,7 @@ const CardContainer = (props) => {
   return (
     <div className="card-container">
       {cardList.array.map((card) => {
-        return <Card key={card.name} name={card.name} />;
+        return <Card key={card.name} image={card.image} name={card.name} />;
       })}
     </div>
   );

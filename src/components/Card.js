@@ -6,9 +6,13 @@ const Card = (props) => {
   };
 
   return (
-    <div className="card" onClick={handleClick}>
-      {props.name}
-    </div>
+    <img
+      className="card"
+      src={props.image}
+      height={"100px"}
+      width="100px"
+      onClick={handleClick}
+    />
   );
 };
 
