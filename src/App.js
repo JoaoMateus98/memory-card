@@ -7,10 +7,14 @@ const App = () => {
   const [currentScore, setCurrentScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
 
+  const incrementScore = () => {
+    setCurrentScore(currentScore + 1);
+  };
+
   return (
     <div className="main-app-container">
       <ScoreBoard currentScore={currentScore} highScore={highScore} />
-      <CardContainer />
+      <CardContainer incrementScore={incrementScore} />
     </div>
   );
 };
