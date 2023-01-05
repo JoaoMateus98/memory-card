@@ -24,12 +24,15 @@ const Card = (props) => {
   }, [props.reset]);
 
   return (
-    <img
-      className="card"
-      src={props.image}
-      alt={props.name}
-      onClick={handleClick}
-    />
+    <section className="card">
+      <img
+        className="card-image"
+        src={props.image}
+        alt={props.name}
+        onClick={handleClick}
+      />
+      <h3>{props.name}</h3>
+    </section>
   );
 };
 
