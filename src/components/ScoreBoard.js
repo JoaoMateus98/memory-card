@@ -3,10 +3,12 @@ import "../styles/ScoreBoard.css";
 
 const ScoreBoard = (props) => {
   return (
-    <div className="score-board-container">
-      <div className="current-score">Current Score: {props.currentScore}</div>
-      <div className="high-score">High Score: {props.highScore}</div>
-    </div>
+    <header className="score-board-container">
+      <h2 className="current-score">
+        Current Score: <span>{props.currentScore}</span>
+      </h2>
+      <h2 className="high-score">High Score: {props.highScore}</h2>
+    </header>
   );
 };
 

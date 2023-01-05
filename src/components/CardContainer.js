@@ -43,11 +43,11 @@ const CardContainer = (props) => {
   }, []);
 
   return (
-    <div className="card-container">
+    <main className="card-container">
       {cardList.array.map((card) => {
         return <Card key={card.name} image={card.image} name={card.name} />;
       })}
-    </div>
+    </main>
   );
 };
 

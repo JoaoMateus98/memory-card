@@ -9,8 +9,7 @@ const Card = (props) => {
     <img
       className="card"
       src={props.image}
-      height={"100px"}
-      width="100px"
+      alt={props.name}
       onClick={handleClick}
     />
   );
