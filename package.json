@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.6.0",
     "file-loader": "^6.2.0"
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Card = (props) => {
   const [wasClicked, setWasClicked] = useState(false);
@@ -7,11 +7,20 @@ const Card = (props) => {
     // clicked twice so you lose
     if (wasClicked) {
       props.setReset(true);
+      return;
     }
 
+    props.incrementScore();
     setWasClicked(true);
     props.shuffleCards();
   };
+
+  // reset all cards wasCliked
+  useEffect(() => {
+    if (props.reset) {
+      setWasClicked(false);
+    }
+  }, [props.reset]);
 
   return (
     <img

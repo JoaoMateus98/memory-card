@@ -22,7 +22,7 @@ const CardContainer = (props) => {
       randomIndex;
 
     // While there remain elements to shuffle.
-    while (currentIndex != 0) {
+    while (currentIndex !== 0) {
       // Pick a remaining element.
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
@@ -51,6 +51,8 @@ const CardContainer = (props) => {
             image={card.image}
             name={card.name}
             shuffleCards={shuffleCards}
+            incrementScore={props.incrementScore}
+            reset={props.reset}
             setReset={props.setReset}
           />
         );

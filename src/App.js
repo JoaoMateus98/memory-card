@@ -19,15 +19,17 @@ const App = () => {
     if (reset) {
       setCurrentScore(0);
       setReset(false);
-
-      console.log("game reset");
     }
   }, [reset]);
 
   return (
     <div className="main-app-container">
       <ScoreBoard currentScore={currentScore} highScore={highScore} />
-      <CardContainer incrementScore={incrementScore} setReset={setReset} />
+      <CardContainer
+        incrementScore={incrementScore}
+        reset={reset}
+        setReset={setReset}
+      />
     </div>
   );
 };
