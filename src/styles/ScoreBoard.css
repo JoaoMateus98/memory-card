@@ -1,5 +1,9 @@
 .score-board-container {
+  display: flex;
   width: 100%;
   border: 2px solid red;
   flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
 }
