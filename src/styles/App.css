@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 html,
@@ -9,10 +10,19 @@ body,
 #root,
 .main-app-container {
   min-height: 100vh;
+  background-color: #dfe0dc;
+}
+
+:root {
+  /* main colors */
+  --platinum: #dfe0dc;
+  --bone: #d1d3c4;
+  --sage: #bdc696;
+  --deep-taupe: #775253;
+  --dark-purple: #351431;
 }
 
 .main-app-container {
-  background-color: green;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -31,7 +31,7 @@ const Card = (props) => {
         alt={props.name}
         onClick={handleClick}
       />
-      <h3>{props.name}</h3>
+      <h3 className="card-name">{props.name}</h3>
     </section>
   );
 };
