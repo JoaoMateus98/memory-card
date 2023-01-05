@@ -16,7 +16,7 @@ const App = () => {
   // winning function
   useEffect(() => {
     if (currentScore === winningScore) {
-      alert("you win");
+      alert("You win!");
       setReset(true);
     }
   }, [currentScore]);

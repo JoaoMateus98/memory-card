@@ -6,6 +6,7 @@ const Card = (props) => {
   const handleClick = () => {
     // clicked twice so you lose
     if (wasClicked) {
+      alert(`${props.name} was already selected!`);
       props.setReset(true);
       return;
     }

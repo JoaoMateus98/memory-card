@@ -8,9 +8,9 @@ import "../styles/CardContainer.css";
 const CardContainer = (props) => {
   const [cardList, setCardList] = useState({
     array: [
-      { image: pythonImage, name: "python" },
-      { image: javascriptImage, name: "javascript" },
-      { image: cImage, name: "c++" },
+      { image: pythonImage, name: "Python" },
+      { image: javascriptImage, name: "Javascript" },
+      { image: cImage, name: "C++" },
     ],
   });
 
