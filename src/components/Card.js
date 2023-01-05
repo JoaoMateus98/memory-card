@@ -2,6 +2,7 @@ import React from "react";
 
 const Card = (props) => {
   const handleClick = () => {
+    props.shuffleCards();
     console.log("clicked", props.name);
   };
 

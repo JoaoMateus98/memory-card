@@ -45,7 +45,14 @@ const CardContainer = (props) => {
   return (
     <main className="card-container">
       {cardList.array.map((card) => {
-        return <Card key={card.name} image={card.image} name={card.name} />;
+        return (
+          <Card
+            key={card.name}
+            image={card.image}
+            name={card.name}
+            shuffleCards={shuffleCards}
+          />
+        );
       })}
     </main>
   );
