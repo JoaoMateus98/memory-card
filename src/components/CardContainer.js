@@ -51,6 +51,7 @@ const CardContainer = (props) => {
             image={card.image}
             name={card.name}
             shuffleCards={shuffleCards}
+            setReset={props.setReset}
           />
         );
       })}
