@@ -1,5 +1,17 @@
 .score-board-container {
+  color: var(--dark-purple);
+  background-color: var(--bone);
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  border: 2px solid red;
   flex-grow: 1;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  border-bottom: 4px solid var(--dark-purple);
+}
+
+.scores {
+  display: flex;
+  gap: 48px;
 }

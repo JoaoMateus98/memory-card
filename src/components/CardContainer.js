@@ -3,6 +3,9 @@ import Card from "./Card";
 import pythonImage from "../images/python.png";
 import javascriptImage from "../images/javascript.png";
 import cImage from "../images/c.png";
+import javaImage from "../images/java.png";
+import rustImage from "../images/rust.png";
+import swiftImage from "../images/swift.png";
 import "../styles/CardContainer.css";
 
 const CardContainer = (props) => {
@@ -11,6 +14,9 @@ const CardContainer = (props) => {
       { image: pythonImage, name: "Python" },
       { image: javascriptImage, name: "Javascript" },
       { image: cImage, name: "C++" },
+      { image: javaImage, name: "Java" },
+      { image: rustImage, name: "Rust" },
+      { image: swiftImage, name: "Swift" },
     ],
   });
 

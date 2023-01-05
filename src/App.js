@@ -7,7 +7,7 @@ const App = () => {
   const [currentScore, setCurrentScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
   const [reset, setReset] = useState(false); // trigers if you lose or win
-  const winningScore = 3;
+  const winningScore = 6;
 
   const incrementScore = () => {
     setCurrentScore(currentScore + 1);
